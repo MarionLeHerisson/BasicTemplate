@@ -23,7 +23,7 @@
         <!-- WONDERFUL_WEBSITE's css -->
         <link href="www/css/style.css" rel="stylesheet" type="text/css">
 
-        <script src="www/js/jquery-1.12.2.min.js"></script>
+        <script src="www/js/jquery-3.1.1.min.js"></script>
         <script src="www/js/bootstrap.min.js"></script>
         <script src="www/js/functions.js"></script>
     </head>

@@ -1,4 +1,8 @@
 Options +FollowSymlinks
 RewriteEngine On
 
-RewriteRule	^(.*)$ Application/View/index.php [L]
+RewriteRule	^home$      Application/View/index.php [L]
+RewriteRule	^contact$   Application/View/index.php [L]
+RewriteRule	^cgu$       Application/View/index.php [L]
+RewriteRule	^editor$    Application/View/index.php [L]
+RewriteRule	^error$     Application/View/index.php [L]

@@ -16,7 +16,7 @@ class someTableNameModel extends DefaultModel {
      * @return PDOStatement
      */
     public function getSomeField($someParameter) {
-        $bdd = $this->connectBdd();
+        $bdd = $this->connectDb();
         $query = $bdd->prepare("SELECT someColumn FROM " . $this->_name . "
                                 WHERE " . $this->_name . ".someOtherColumn = ?;");
 

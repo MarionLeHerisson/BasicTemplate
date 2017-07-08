@@ -1,6 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine On
 
-RewriteRule	^home$      Application/View/index.php [L]
-RewriteRule	^contact$   Application/View/index.php [L]
-RewriteRule	^error$     Application/View/index.php [L]
+RewriteRule	^home$      index.php [L]
+RewriteRule	^contact$   index.php [L]
+RewriteRule	^error$     index.php [L]

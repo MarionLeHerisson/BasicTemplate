@@ -8,8 +8,8 @@
 class DefaultModel {
     protected $coBdd = null;
 
-    // connect to bdd
-    public function connectBdd() {
+    // connect to data base
+    public function connectDb() {
         if(isset($this->coBdd)) {
             return $this->coBdd;
         }

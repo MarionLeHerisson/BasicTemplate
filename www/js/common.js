@@ -1,5 +1,7 @@
 /**
- * Created by Marion on 28/01/2017.
+ * Created by MarionLeHerisson
+ * https://github.com/MarionLeHerisson/BasicTemplate
+ * GNU GPL v3.0
  */
 
 /**
@@ -32,11 +34,17 @@ function closePopin() {
     });
 }
 
+/**
+ *
+ * @param label     // String - id of the div
+ * @param message   // String - the message to be displayed
+ * @param isError   // Bool - set to true for an error
+ */
 function showMessage(label, message, isError) {
 
     var typeAdded ='success',
         typeRemoved = 'danger';
-    if(isError == 1) {
+    if(isError === true) {
         typeAdded = 'danger';
         typeRemoved = 'success';
     }

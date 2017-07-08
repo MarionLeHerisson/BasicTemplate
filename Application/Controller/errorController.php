@@ -9,8 +9,8 @@ class errorController {
 
     public function indexAction() {
 
-        require_once('../View/header.php');
-        require_once('../View/error.php');
-        require_once('../View/footer.php');
+        require_once(BASE_PATH . 'Application/View/header.php');
+        require_once(BASE_PATH . 'Application/View/error.php');
+        require_once(BASE_PATH . 'Application/View/footer.php');
     }
 }

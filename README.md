@@ -11,4 +11,4 @@ Improvements to come :
 - clean error handling
 - command line tool for initialisation
 
-Hope you enjoy it ! Every feedback appreciated :)
+Hope you enjoy it ! Every feedback is appreciated :)

@@ -7,7 +7,7 @@
 
 /* W I N D O W S   L O C A L   C O N F */
 if($_SERVER['HTTP_HOST'] == 'localhost') {
-    define('BASE_URL', 'localhost' . DIRECTORY_SEPARATOR . 'basic_template' . DIRECTORY_SEPARATOR . 'www' . DIRECTORY_SEPARATOR);
+    define('BASE_URL', 'http://localhost' . DIRECTORY_SEPARATOR . 'basic_template' . DIRECTORY_SEPARATOR . 'www' . DIRECTORY_SEPARATOR);
     define('BASE_PATH', 'C:' . DIRECTORY_SEPARATOR . 'wamp64' . DIRECTORY_SEPARATOR . 'www' . DIRECTORY_SEPARATOR .
         'basic_template' . DIRECTORY_SEPARATOR);
     define('HOSTNAME', 'localhost');

@@ -1,4 +1,4 @@
-Options +FollowSymlinks
+Options +FollowSymLinks
 RewriteEngine On
 
 RewriteRule	^home$      index.php [L]

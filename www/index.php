@@ -1,7 +1,7 @@
 <?php
 require_once("../const.php");
 
-// get actual page name
+// get current page name
 if(array_key_exists('REDIRECT_URL', $_SERVER)) {
     $exploded = explode('/', $_SERVER['REDIRECT_URL']);
     $len = sizeof($exploded) - 1;
@@ -18,7 +18,7 @@ if(THISPAGE == '') {
     $errorController = new homeController;
     $errorController->indexAction();
 }
-// include actual page controller (if it exists)
+// include current page controller (if it exists)
 else if(file_exists(BASE_PATH . 'Application' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . THISPAGE . 'Controller.php')) {
 
     require_once(

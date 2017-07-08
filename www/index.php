@@ -8,18 +8,11 @@ if(array_key_exists('REDIRECT_URL', $_SERVER)) {
     define('THISPAGE', $exploded[$len]);
 }
 else {
-    define('THISPAGE', '');
+    define('THISPAGE', 'home');
 }
 
-// base address = homepage
-if(THISPAGE == '') {
-
-    require_once(BASE_PATH . 'Application' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . 'homeController.php');
-    $errorController = new homeController;
-    $errorController->indexAction();
-}
 // include current page controller (if it exists)
-else if(file_exists(BASE_PATH . 'Application' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . THISPAGE . 'Controller.php')) {
+if(file_exists(BASE_PATH . 'Application' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . THISPAGE . 'Controller.php')) {
 
     require_once(
         BASE_PATH . 'Application' . DIRECTORY_SEPARATOR . 'Controller' . DIRECTORY_SEPARATOR . THISPAGE . 'Controller.php');
